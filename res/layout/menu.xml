@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- The main content view -->
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:background="@drawable/back21"
+        >
+   <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"
+            >
+            <SurfaceView android:id="@+id/CameraView"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            />
+            <com.example.feelsafe.ProgressWheel
+                android:id="@+id/pwtwo"
+                android:layout_width="290dp"
+                android:layout_height="290dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                ProgressWheel:barColor="#ffffff"
+                ProgressWheel:barLength="180dp"
+                ProgressWheel:barWidth="25dp"
+                ProgressWheel:rimColor="#44000000"
+                ProgressWheel:rimWidth="25dp"
+                ProgressWheel:spinSpeed="3dp"
+                ProgressWheel:text="Alert"
+                ProgressWheel:textColor="#D9E0E1"
+                ProgressWheel:textSize="30dp"
+                android:clickable="true"
+                android:onClick="altdirec"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/drawer_list"
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/LightGrey"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+</android.support.v4.widget.DrawerLayout>

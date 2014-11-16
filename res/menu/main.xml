@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <item
+        android:id="@+id/nc"
+        android:title="Listen in Background"
+        android:showAsAction="always"/>
+    
+    <item
+        android:id="@+id/google"
+        android:showAsAction="always"
+        android:title="Google Voice Search"
+        android:icon="@drawable/ic_action_mic"
+        />
+    
+    <item android:id="@+id/helpRequired"
+          android:icon="@drawable/hr"
+          android:title="Help Required"
+          android:showAsAction="always"/>
+    
+    <item android:id="@+id/helpComing"
+          android:icon="@drawable/hc"
+          android:title="Help Coming"
+          android:showAsAction="always" />
+    
+    <item android:id="@+id/addcon"
+          android:icon="@drawable/adc"
+          android:title="Add Contacts"
+          android:showAsAction="always" />
+     
+    <!-- Refresh -->
+    <item android:id="@+id/alertLanched"
+          android:icon="@drawable/al"
+          android:title="al"
+          android:showAsAction="ifRoom" />
+
+</menu>

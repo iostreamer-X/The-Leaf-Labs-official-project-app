@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Protect ME</string>
+    <string name="app_id">1691660347725116</string> 
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">CardsUI</string>
+    <string name="title">Title</string>
+    <string name="desc">Description</string>
+	<string name="overflow">Menu Overflow</string>
+	<string name="color_stripe">Color Stripe</string><string-array name="menus">
+        <item>Change Details</item>
+        <item>Delete Contact</item>
+        <item>Instructions</item>
+        <item>About</item>
+    </string-array>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sunback"
+    >
+     <com.example.feelsafe.ProgressWheel
+                android:id="@+id/pwtwo"
+                android:layout_width="290dp"
+                android:layout_height="290dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                ProgressWheel:barColor="#ffffff"
+                ProgressWheel:barLength="180dp"
+                ProgressWheel:barWidth="25dp"
+                ProgressWheel:rimColor="#44000000"
+                ProgressWheel:rimWidth="25dp"
+                ProgressWheel:spinSpeed="3dp"
+                ProgressWheel:text="Alert"
+                ProgressWheel:textColor="#D9E0E1"
+                ProgressWheel:textSize="30dp"
+                android:clickable="true"
+                android:onClick="altdirec"
+                />
+    
+</RelativeLayout>
+
+

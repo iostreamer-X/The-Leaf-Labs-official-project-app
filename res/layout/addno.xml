@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.7"
+        android:scaleType="matrix"
+        android:src="@drawable/lo" 
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.9"
+        android:background="@color/LightGrey"
+        android:text="Please Enter The phone numbers of close friends and relatives.These numbers will be called through device in emergency."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/LightSeaGreen" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="Enter Phone No."
+        android:inputType="phone"
+        android:textColorHint="@color/LightSeaGreen" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="71dp"
+        android:alpha="0.8"
+        android:background="@color/LightSlateGray"
+        android:clickable="true"
+        android:onClick="add"
+        android:text="    ADD       "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/LightSeaGreen"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="36dp"
+        android:alpha="0.8"
+        android:background="@color/LightSlateGray"
+        android:clickable="true"
+        android:onClick="go"
+        android:text="      Done   "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/LightSeaGreen"
+        android:textSize="30sp" />
+
+</RelativeLayout>

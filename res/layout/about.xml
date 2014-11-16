@@ -1,0 +1,223 @@
+<com.example.feelsafe.DiscrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.feelsafe.DiscrollViewContent
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:padding="25dp"
+            android:textSize="60sp"
+            tools:visibility="gone"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:text=" Bringing Abundance to Life" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#007788"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_threshold="0.3" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromLeft|fromBottom"
+            android:src="@drawable/llf"
+            android:contentDescription="cheese image" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            discrollve:discrollve_fromBgColor="#88EE66"
+            discrollve:discrollve_toBgColor="#ff4444" />
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="right"
+            android:scaleType="fitXY"
+            android:src="@drawable/str"
+            discrollve:discrollve_translation="fromRight"
+            android:contentDescription="another cheese image " />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="A six months old Startup"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromBottom" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_margin="0dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/abundance1"
+            discrollve:discrollve_scaleX="true"
+            discrollve:discrollve_scaleY="true"  />
+
+       <!--  
+       <com.example.discroll.DiscrollvablePurpleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_purple"
+            android:orientation="vertical"
+            tools:visibility="gone">
+
+            <ImageView
+                android:id="@+id/purpleView1"
+                android:alpha="0"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/abundance2"
+                android:translationX="-150dp" />
+
+            <ImageView
+                android:id="@+id/purpleView2"
+                android:alpha="0"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="15dp"
+               
+                android:src="@drawable/security"
+                android:translationX="100dp" />
+
+        </com.example.discroll.DiscrollvablePurpleLayout>
+         -->
+        <com.example.feelsafe.DiscrollvablePathLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/pathView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="Exhibiting at GITEX-2014"
+                android:textSize="25sp" />
+
+        </com.example.feelsafe.DiscrollvablePathLayout>
+
+        <com.example.feelsafe.DiscrollvableRedLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark"
+            tools:visibility="gone">
+
+            <TextView
+                android:id="@+id/redView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="With 20 Smardworking Leaflets"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" 
+                />
+
+            <ImageView
+                android:id="@+id/redView2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="0dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:alpha="0.0"
+                android:src="@drawable/str"
+                android:scaleX="0.1"
+                android:scaleY="0.1"
+                android:translationY="50dp" /> 
+
+        </com.example.feelsafe.DiscrollvableRedLayout>
+
+        <com.example.feelsafe.DiscrollvableGreenLayout
+            android:layout_width="match_parent"
+            tools:visibility="gone"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light">
+
+            <TextView
+                android:id="@+id/greenView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="50dp"
+                android:fontFamily="sans-serif-light"
+                android:translationY="-50dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Support us by spreading this valuable  app to everyone"
+                android:textSize="36sp" />
+
+        </com.example.feelsafe.DiscrollvableGreenLayout>
+
+        <com.example.feelsafe.DiscrollvableLastLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/lastView1"
+                android:translationX="-200dp"
+                android:translationY="-200dp"
+                android:alpha="0"
+                android:scaleType="fitXY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gitex" />
+
+              <!--<ImageView
+                android:id="@+id/lastView2"
+                android:translationX="200dp"
+                android:translationY="200dp"
+                android:alpha="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/lastView3"
+                android:src="@drawable/ilovecheese_heart" />
+
+            <ImageView
+                android:id="@+id/lastView3"
+                android:translationY="200dp"
+                android:alpha="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@+id/lastView1"
+                android:src="@drawable/ilovecheese_cheese" />
+            -->
+
+        </com.example.feelsafe.DiscrollvableLastLayout>
+
+    </com.example.feelsafe.DiscrollViewContent>
+
+</com.example.feelsafe.DiscrollView>
